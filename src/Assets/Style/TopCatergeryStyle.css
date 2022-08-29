@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+.navbarB{
+  margin-bottom: 30px;
+}
+.center{
+    margin-left: 38pc;
+    margin-top: 2pc;
+}
+h2{
+    font-family: "Futura PT";
+    font-weight: bolder;
+}
+.Technology{
+    background: rgba(0, 0, 0, 0.6) url("https://source.unsplash.com/600x500/?technology,coding");
+    background-blend-mode: darken;
+    height: 500px;
+    width: 600px;
+    transition: all 0.8s ease-in-out;
+    border-radius: 15px
+}
+.Technology button{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    margin-top: 227px;
+    margin-left: 33px;
+}
+
+.Technology h1{
+    font-size: 2.2rem;
+    text-align: left;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    margin-left: 33px;
+}
+.Sport{
+    background: rgba(0, 0, 0, 0.4) url("https://source.unsplash.com/600x500/?sport,cricket,football");
+    background-blend-mode: darken;
+    height: 250px;
+    width: 600px;
+    transition: all 0.8s ease-in-out;
+    border-radius: 15px
+}
+.Sport button{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 33px;
+}
+.Sport h3{
+    font-size: 1.8rem;
+    text-align: left;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    margin-left: 33px;
+}
+
+.Fasion{
+    background: rgba(0, 0, 0, 0.4) url("https://source.unsplash.com/600x500/?art,fasion");
+    background-blend-mode: darken;
+    height: 240px;
+    width: 300px;
+    transition: all 0.8s ease-in-out;
+    border-radius: 15px
+}
+
+.Politics{
+    background: rgba(0, 0, 0, 0.4) url("https://source.unsplash.com/600x500/?polictics,social");
+    background-blend-mode: darken;
+    height: 240px;
+    width: 300px;
+    transition: all 0.8s ease-in-out;
+    border-radius: 15px;
+}
+
+.Technology:hover{
+    background: rgba(43, 30, 133, 0.5) url("https://source.unsplash.com/600x500/?technology,machine");
+    background-blend-mode: darken;
+}
+
+.Politics:hover{
+    background: rgba(43, 30, 133, 0.9) url("https://source.unsplash.com/600x500/?polictics,social");
+    background-blend-mode: darken;
+}
+.Sport:hover{
+    background: rgba(43, 30, 133, 0.9) url("https://source.unsplash.com/600x500/?cricket,hockey");
+    background-blend-mode: darken;
+}
+.Fasion:hover{
+    background: rgba(43, 30, 133, 0.9) url("https://source.unsplash.com/600x500/?fasion,company");
+    background-blend-mode: darken;
+}
+
+.Fasion button{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 33px;   
+}
+
+.Politics button{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 33px;   
+}
+
+.Politics h4{
+    font-size: 1.3rem;
+    text-align: left;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    margin-left: 33px;
+}
+
+.Fasion h4{
+    font-size: 1.3rem;
+    text-align: left;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    margin-left: 33px;
+}
+
+
+/* loading spinner style  */ 
+ @-webkit-keyframes m14s_anim {
+    0%, 40%, 100% {
+       -webkit-transform: translateY(0);
+       transform: translateY(0);
+    }
+    20% {
+       -webkit-transform: translateY(-25px);
+       transform: translateY(-25px);
+    }
+ } 
+   
+ @keyframes m14s_anim {
+    0%, 40%, 100% {
+       -webkit-transform: translateY(0);
+       transform: translateY(0);
+    }
+    20% {
+       -webkit-transform: translateY(-25px);
+       transform: translateY(-25px);
+    }
+ }
+
+
+ /* loading spiner 2  */
+ @keyframes glow{
+    50%{
+      border-color:lime;
+      width:95%;
+      box-shadow:0px 0px 10px -2px green;
+    }
+    100%{
+      border-color:green;
+      width:35%;
+      box-shadow:0px 0px 10px -2px green;
+    }
+  }
+  .sep{
+    width:35%;
+    border-bottom:2px solid green;
+    margin-bottom:20px;
+    animation:glow 8s infinite;
+  }
+  .loader{
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px 20px;
+  }
+  @keyframes load{
+    50%{
+      transform:rotatez(180deg) scale(0.2);
+      border-color:orange;
+    }
+    100%{
+      transform:rotatez(360deg) scale(1.1);
+    }
+  }
+  .loader1::before{
+    content:"";
+    color:white;
+    height:30px;
+    width:30px;
+    background:transparent;
+    border-radius:45%;
+    border:25px dotted lime;
+    animation:load 1s infinite ease-in-out;
+  }
+  
+  @keyframes load2{
+    50%{
+      transform:rotatez(180deg);
+      border-radius:55%;
+    }
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+  .loader2::before{
+    content:"";
+    color:white;
+    height:30px;
+    width:30px;
+    background:transparent;
+    border-radius:10%;
+    border:25px inset orange;
+    animation:load2 1s infinite ease-in-out;
+  }
+  @keyframes load3{
+    50%{
+      transform:rotatez(180deg) scale(1.5);
+      border-style:dotted;
+    }
+    100%{
+      transform:rotatez(360deg) scale(0.9);
+    }
+  }
+ 
+  @keyframes load4{
+    50%{
+      transform:rotatez(180deg);
+      border-width:30px;
+    }
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+ 
+  @keyframes load5{
+    40%{
+      transform:rotatez(-180deg);
+      border-width:16px;
+    }
+    80%{
+      transform:rotatez(-360deg);
+    }
+    100%{
+      transform:rotatez(-360deg);
+    }
+  }
+  
+  @keyframes load6{
+    50%{
+      transform:rotatez(180deg);
+      border-width:40px;
+    }
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+ 
+  @keyframes load7{
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+  .loader7::before{
+    content:"";
+    color:white;
+    height:50px;
+    width:50px;
+    background:transparent;
+    border-radius:50%;
+    border:10px solid rgb(13, 145, 101);
+    border-color:#166d18 #09600e #1fb10c #1cbb11;
+    animation:load7 .6s infinite ease-in-out;
+    box-shadow:0px 0px 40px -2px skyblue;
+  }
+  
+  @keyframes load8{
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+
+  @keyframes load9{
+    50%{
+      transform:rotatez(180deg) scale(0.6);
+    }
+    100%{
+      transform:rotatez(360deg) scale(1);
+    }
+  }
+
+  
+  @keyframes load10{
+    50%{
+      transform:rotatez(180deg);
+      border-style:dashed;
+      border-color:red maroon indianred orangered;
+    }
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+
+
+
+  .loader {
+    width: 20em;
+    height: 20em;
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader .face {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    animation: animate 3s linear infinite;
+}
+
+.loader .face:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    color: gold;
+    border-color: currentColor transparent transparent currentColor;
+    border-width: 0.2em 0.2em 0em 0em;
+    --deg: -45deg;
+    animation-direction: normal;
+}
+
+.loader .face:nth-child(2) {
+    width: 70%;
+    height: 70%;
+    color: lime;
+    border-color: currentColor currentColor transparent transparent;
+    border-width: 0.2em 0em 0em 0.2em;
+    --deg: -135deg;
+    animation-direction: reverse;
+}
+
+.loader .face .circle {
+    position: absolute;
+    width: 50%;
+    height: 0.1em;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    transform: rotate(var(--deg));
+    transform-origin: left;
+}
+
+.loader .face .circle::before {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 2em,
+                0 0 4em,
+                0 0 6em,
+                0 0 8em,
+                0 0 10em,
+                0 0 0 0.5em rgba(255, 255, 0, 0.1);
+}
+
+@keyframes animate {
+    to {
+        transform: rotate(1turn);
+    }
+}
